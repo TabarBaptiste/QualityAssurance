@@ -1,4 +1,3 @@
-# test_suite.py
 import unittest
 from test_cases import TestMathFunctions  # On importe les tests définis dans test_cases.py
 

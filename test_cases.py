@@ -1,4 +1,3 @@
-# test_cases.py
 import unittest
 
 # Une fonction simple à tester
@@ -14,17 +13,17 @@ def division(a, b):
 class TestMathFunctions(unittest.TestCase):
 
     def test_addition(self):
-        """Test de la fonction addition"""
+        """Test addition function"""
         self.assertEqual(addition(2, 3), 5)
         self.assertEqual(addition(-1, 1), 0)
 
     def test_division(self):
-        """Test de la fonction division"""
+        """Test division function """
         self.assertEqual(division(10, 2), 5.0)
         self.assertAlmostEqual(division(1, 3), 0.333333, places=5)
 
     def test_division_by_zero(self):
-        """Vérifie qu'une division par zéro soulève une exception"""
+        """Checks that a division by zero raises an exception"""
         with self.assertRaises(ValueError):
             division(5, 0)
 
