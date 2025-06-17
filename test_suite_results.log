@@ -1,0 +1,153 @@
+2025-06-17 16:54:43,136 - TestSuite - INFO - Added TestWebAPIIntegration with 8 test cases
+2025-06-17 16:54:43,137 - TestSuite - INFO - Added TestWebAPIClient with 10 test cases
+2025-06-17 16:54:43,138 - TestSuite - INFO - Added TestAPIEndpoints with 7 test cases
+2025-06-17 16:54:43,138 - TestSuite - INFO - Starting test suite execution
+2025-06-17 16:54:43,290 - test_web_api_integration - ERROR - Error setting up test resources: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /resources (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000026E3DCC1400>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-06-17 16:54:43,329 - test_web_api_integration - INFO - Test 'test_connection_error_handling' exécuté en 0.0010 secondes
+2025-06-17 16:54:43,331 - test_web_api_integration - INFO - Test 'test_delete_method' exécuté en 0.0010 secondes
+2025-06-17 16:54:43,334 - test_web_api_integration - INFO - Test 'test_get_method' exécuté en 0.0017 secondes
+2025-06-17 16:54:43,337 - test_web_api_integration - INFO - Test 'test_get_with_params' exécuté en 0.0015 secondes
+2025-06-17 16:54:43,339 - test_web_api_integration - INFO - Test 'test_http_error_handling' exécuté en 0.0009 secondes
+2025-06-17 16:54:43,341 - test_web_api_integration - INFO - Test 'test_init_with_api_key' exécuté en 0.0001 secondes
+2025-06-17 16:54:43,342 - test_web_api_integration - INFO - Test 'test_init_without_api_key' exécuté en 0.0000 secondes
+2025-06-17 16:54:43,345 - test_web_api_integration - INFO - Test 'test_post_method' exécuté en 0.0010 secondes
+2025-06-17 16:54:43,348 - test_web_api_integration - INFO - Test 'test_put_method' exécuté en 0.0020 secondes
+2025-06-17 16:54:43,350 - test_web_api_integration - INFO - Test 'test_timeout_error_handling' exécuté en 0.0006 secondes
+2025-06-17 16:54:43,353 - test_web_api_integration - INFO - Test 'test_create_user_endpoint' exécuté en 0.0012 secondes
+2025-06-17 16:54:43,353 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_create_user_endpoint completed in 0.0017 seconds
+2025-06-17 16:54:43,356 - test_web_api_integration - INFO - Test 'test_delete_user_endpoint' exécuté en 0.0012 secondes
+2025-06-17 16:54:43,356 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_delete_user_endpoint completed in 0.0016 seconds
+2025-06-17 16:54:43,359 - test_web_api_integration - INFO - Test 'test_orders_endpoint' exécuté en 0.0018 secondes
+2025-06-17 16:54:43,359 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_orders_endpoint completed in 0.0021 seconds
+2025-06-17 16:54:43,362 - test_web_api_integration - INFO - Test 'test_products_endpoint' exécuté en 0.0010 secondes
+2025-06-17 16:54:43,362 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_products_endpoint completed in 0.0014 seconds
+2025-06-17 16:54:43,365 - test_web_api_integration - INFO - Test 'test_update_user_endpoint' exécuté en 0.0013 secondes
+2025-06-17 16:54:43,365 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_update_user_endpoint completed in 0.0017 seconds
+2025-06-17 16:54:43,367 - test_web_api_integration - INFO - Test 'test_user_details_endpoint' exécuté en 0.0010 secondes
+2025-06-17 16:54:43,368 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_user_details_endpoint completed in 0.0014 seconds
+2025-06-17 16:54:43,370 - test_web_api_integration - INFO - Test 'test_users_endpoint' exécuté en 0.0010 secondes
+2025-06-17 16:54:43,370 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_users_endpoint completed in 0.0013 seconds
+2025-06-17 16:54:43,405 - TestSuite - INFO - ======================================================================
+2025-06-17 16:54:43,405 - TestSuite - INFO - Test Suite Results:
+2025-06-17 16:54:43,406 - TestSuite - INFO -   Start time: 2025-06-17 16:54:43.138737
+2025-06-17 16:54:43,406 - TestSuite - INFO -   End time: 2025-06-17 16:54:43.405241
+2025-06-17 16:54:43,407 - TestSuite - INFO -   Duration: 0.27 seconds
+2025-06-17 16:54:43,409 - TestSuite - INFO -   Tests run: 17
+2025-06-17 16:54:43,409 - TestSuite - INFO -   Failures: 0
+2025-06-17 16:54:43,409 - TestSuite - INFO -   Errors: 1
+2025-06-17 16:54:43,411 - TestSuite - INFO -   Skipped: 0
+2025-06-17 16:54:43,411 - TestSuite - INFO - ======================================================================
+2025-06-17 16:55:53,967 - TestSuite - INFO - Added TestWebAPIIntegration with 8 test cases
+2025-06-17 16:55:53,968 - TestSuite - INFO - Added TestWebAPIClient with 10 test cases
+2025-06-17 16:55:53,968 - TestSuite - INFO - Added TestAPIEndpoints with 7 test cases
+2025-06-17 16:55:53,969 - TestSuite - INFO - Starting test suite execution
+2025-06-17 16:55:53,971 - test_web_api_integration - INFO - Created mock test resource with ID: test123
+2025-06-17 16:55:53,974 - test_web_api_integration - INFO - Test 'test_api_authentication' exécuté en 0.0014 secondes
+2025-06-17 16:55:53,974 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_authentication completed in 0.0018 seconds
+2025-06-17 16:55:53,976 - test_web_api_integration - INFO - Test 'test_api_error_handling' exécuté en 0.0008 secondes
+2025-06-17 16:55:53,976 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_error_handling completed in 0.0012 seconds
+2025-06-17 16:55:53,978 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_get_parametrized completed in 0.0011 seconds
+2025-06-17 16:55:53,982 - test_web_api_integration - INFO - Test 'test_api_get_with_mocking' exécuté en 0.0015 secondes
+2025-06-17 16:55:53,982 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_get_with_mocking completed in 0.0019 seconds
+2025-06-17 16:55:53,984 - test_web_api_integration - INFO - Test 'test_api_post_with_validation' exécuté en 0.0007 secondes
+2025-06-17 16:55:53,984 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_post_with_validation completed in 0.0010 seconds
+2025-06-17 16:55:53,986 - test_web_api_integration - INFO - Test 'test_api_response_schema' exécuté en 0.0006 secondes
+2025-06-17 16:55:53,987 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_response_schema completed in 0.0010 seconds
+2025-06-17 16:55:53,990 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_with_network_conditions completed in 0.0019 seconds
+2025-06-17 16:55:54,000 - test_web_api_integration - INFO - Test 'test_concurrent_api_requests' exécuté en 0.0088 secondes
+2025-06-17 16:55:54,000 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_concurrent_api_requests completed in 0.0092 seconds
+2025-06-17 16:55:54,001 - test_web_api_integration - INFO - Cleaned up mock test resource with ID: test123
+2025-06-17 16:55:54,005 - test_web_api_integration - INFO - Test 'test_connection_error_handling' exécuté en 0.0006 secondes
+2025-06-17 16:55:54,010 - test_web_api_integration - INFO - Test 'test_delete_method' exécuté en 0.0019 secondes
+2025-06-17 16:55:54,013 - test_web_api_integration - INFO - Test 'test_get_method' exécuté en 0.0014 secondes
+2025-06-17 16:55:54,015 - test_web_api_integration - INFO - Test 'test_get_with_params' exécuté en 0.0010 secondes
+2025-06-17 16:55:54,017 - test_web_api_integration - INFO - Test 'test_http_error_handling' exécuté en 0.0009 secondes
+2025-06-17 16:55:54,018 - test_web_api_integration - INFO - Test 'test_init_with_api_key' exécuté en 0.0001 secondes
+2025-06-17 16:55:54,019 - test_web_api_integration - INFO - Test 'test_init_without_api_key' exécuté en 0.0001 secondes
+2025-06-17 16:55:54,021 - test_web_api_integration - INFO - Test 'test_post_method' exécuté en 0.0009 secondes
+2025-06-17 16:55:54,024 - test_web_api_integration - INFO - Test 'test_put_method' exécuté en 0.0011 secondes
+2025-06-17 16:55:54,026 - test_web_api_integration - INFO - Test 'test_timeout_error_handling' exécuté en 0.0009 secondes
+2025-06-17 16:55:54,029 - test_web_api_integration - INFO - Test 'test_create_user_endpoint' exécuté en 0.0013 secondes
+2025-06-17 16:55:54,029 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_create_user_endpoint completed in 0.0016 seconds
+2025-06-17 16:55:54,035 - test_web_api_integration - INFO - Test 'test_delete_user_endpoint' exécuté en 0.0012 secondes
+2025-06-17 16:55:54,035 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_delete_user_endpoint completed in 0.0018 seconds
+2025-06-17 16:55:54,037 - test_web_api_integration - INFO - Test 'test_orders_endpoint' exécuté en 0.0010 secondes
+2025-06-17 16:55:54,038 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_orders_endpoint completed in 0.0013 seconds
+2025-06-17 16:55:54,039 - test_web_api_integration - INFO - Test 'test_products_endpoint' exécuté en 0.0009 secondes
+2025-06-17 16:55:54,040 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_products_endpoint completed in 0.0013 seconds
+2025-06-17 16:55:54,042 - test_web_api_integration - INFO - Test 'test_update_user_endpoint' exécuté en 0.0011 secondes
+2025-06-17 16:55:54,042 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_update_user_endpoint completed in 0.0014 seconds
+2025-06-17 16:55:54,047 - test_web_api_integration - INFO - Test 'test_user_details_endpoint' exécuté en 0.0039 secondes
+2025-06-17 16:55:54,048 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_user_details_endpoint completed in 0.0046 seconds
+2025-06-17 16:55:54,050 - test_web_api_integration - INFO - Test 'test_users_endpoint' exécuté en 0.0009 secondes
+2025-06-17 16:55:54,050 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_users_endpoint completed in 0.0013 seconds
+2025-06-17 16:55:54,057 - TestSuite - INFO - ======================================================================
+2025-06-17 16:55:54,057 - TestSuite - INFO - Test Suite Results:
+2025-06-17 16:55:54,058 - TestSuite - INFO -   Start time: 2025-06-17 16:55:53.969417
+2025-06-17 16:55:54,058 - TestSuite - INFO -   End time: 2025-06-17 16:55:54.057215
+2025-06-17 16:55:54,059 - TestSuite - INFO -   Duration: 0.09 seconds
+2025-06-17 16:55:54,059 - TestSuite - INFO -   Tests run: 25
+2025-06-17 16:55:54,059 - TestSuite - INFO -   Failures: 1
+2025-06-17 16:55:54,060 - TestSuite - INFO -   Errors: 1
+2025-06-17 16:55:54,060 - TestSuite - INFO -   Skipped: 0
+2025-06-17 16:55:54,060 - TestSuite - INFO - ======================================================================
+2025-06-17 16:57:29,969 - TestSuite - INFO - Added TestWebAPIIntegration with 10 test cases
+2025-06-17 16:57:29,970 - TestSuite - INFO - Added TestWebAPIClient with 10 test cases
+2025-06-17 16:57:29,971 - TestSuite - INFO - Added TestAPIEndpoints with 7 test cases
+2025-06-17 16:57:29,972 - TestSuite - INFO - Starting test suite execution
+2025-06-17 16:57:29,976 - test_web_api_integration - INFO - Created mock test resource with ID: test123
+2025-06-17 16:57:29,979 - test_web_api_integration - INFO - Test 'test_api_authentication' exécuté en 0.0010 secondes
+2025-06-17 16:57:29,980 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_authentication completed in 0.0017 seconds
+2025-06-17 16:57:29,982 - test_web_api_integration - INFO - Test 'test_api_error_handling' exécuté en 0.0010 secondes
+2025-06-17 16:57:29,983 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_error_handling completed in 0.0018 seconds
+2025-06-17 16:57:29,985 - test_web_api_integration - INFO - Test 'test_api_get_parametrized_200' exécuté en 0.0012 secondes
+2025-06-17 16:57:29,986 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_get_parametrized_200 completed in 0.0017 seconds
+2025-06-17 16:57:29,988 - test_web_api_integration - INFO - Test 'test_api_get_parametrized_400' exécuté en 0.0005 secondes
+2025-06-17 16:57:29,989 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_get_parametrized_400 completed in 0.0012 seconds
+2025-06-17 16:57:29,991 - test_web_api_integration - INFO - Test 'test_api_get_parametrized_404' exécuté en 0.0005 secondes
+2025-06-17 16:57:29,991 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_get_parametrized_404 completed in 0.0009 seconds
+2025-06-17 16:57:29,993 - test_web_api_integration - INFO - Test 'test_api_get_with_mocking' exécuté en 0.0013 secondes
+2025-06-17 16:57:29,994 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_get_with_mocking completed in 0.0016 seconds
+2025-06-17 16:57:29,996 - test_web_api_integration - INFO - Test 'test_api_post_with_validation' exécuté en 0.0009 secondes
+2025-06-17 16:57:29,996 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_post_with_validation completed in 0.0013 seconds
+2025-06-17 16:57:29,998 - test_web_api_integration - INFO - Test 'test_api_response_schema' exécuté en 0.0006 secondes
+2025-06-17 16:57:29,998 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_response_schema completed in 0.0010 seconds
+2025-06-17 16:57:30,100 - test_web_api_integration - INFO - Test 'test_api_with_network_conditions' exécuté en 0.1010 secondes
+2025-06-17 16:57:30,102 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_api_with_network_conditions completed in 0.1021 seconds
+2025-06-17 16:57:30,120 - test_web_api_integration - INFO - Test 'test_concurrent_api_requests' exécuté en 0.0138 secondes
+2025-06-17 16:57:30,123 - test_web_api_integration - INFO - test_web_api_integration.TestWebAPIIntegration.test_concurrent_api_requests completed in 0.0171 seconds
+2025-06-17 16:57:30,129 - test_web_api_integration - INFO - Cleaned up mock test resource with ID: test123
+2025-06-17 16:57:30,136 - test_web_api_integration - INFO - Test 'test_connection_error_handling' exécuté en 0.0010 secondes
+2025-06-17 16:57:30,141 - test_web_api_integration - INFO - Test 'test_delete_method' exécuté en 0.0014 secondes
+2025-06-17 16:57:30,144 - test_web_api_integration - INFO - Test 'test_get_method' exécuté en 0.0015 secondes
+2025-06-17 16:57:30,147 - test_web_api_integration - INFO - Test 'test_get_with_params' exécuté en 0.0015 secondes
+2025-06-17 16:57:30,150 - test_web_api_integration - INFO - Test 'test_http_error_handling' exécuté en 0.0014 secondes
+2025-06-17 16:57:30,152 - test_web_api_integration - INFO - Test 'test_init_with_api_key' exécuté en 0.0001 secondes
+2025-06-17 16:57:30,155 - test_web_api_integration - INFO - Test 'test_init_without_api_key' exécuté en 0.0001 secondes
+2025-06-17 16:57:30,158 - test_web_api_integration - INFO - Test 'test_post_method' exécuté en 0.0018 secondes
+2025-06-17 16:57:30,161 - test_web_api_integration - INFO - Test 'test_put_method' exécuté en 0.0010 secondes
+2025-06-17 16:57:30,162 - test_web_api_integration - INFO - Test 'test_timeout_error_handling' exécuté en 0.0006 secondes
+2025-06-17 16:57:30,165 - test_web_api_integration - INFO - Test 'test_create_user_endpoint' exécuté en 0.0014 secondes
+2025-06-17 16:57:30,166 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_create_user_endpoint completed in 0.0018 seconds
+2025-06-17 16:57:30,168 - test_web_api_integration - INFO - Test 'test_delete_user_endpoint' exécuté en 0.0008 secondes
+2025-06-17 16:57:30,169 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_delete_user_endpoint completed in 0.0017 seconds
+2025-06-17 16:57:30,172 - test_web_api_integration - INFO - Test 'test_orders_endpoint' exécuté en 0.0015 secondes
+2025-06-17 16:57:30,172 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_orders_endpoint completed in 0.0020 seconds
+2025-06-17 16:57:30,177 - test_web_api_integration - INFO - Test 'test_products_endpoint' exécuté en 0.0037 secondes
+2025-06-17 16:57:30,178 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_products_endpoint completed in 0.0046 seconds
+2025-06-17 16:57:30,181 - test_web_api_integration - INFO - Test 'test_update_user_endpoint' exécuté en 0.0010 secondes
+2025-06-17 16:57:30,181 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_update_user_endpoint completed in 0.0014 seconds
+2025-06-17 16:57:30,183 - test_web_api_integration - INFO - Test 'test_user_details_endpoint' exécuté en 0.0010 secondes
+2025-06-17 16:57:30,183 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_user_details_endpoint completed in 0.0014 seconds
+2025-06-17 16:57:30,186 - test_web_api_integration - INFO - Test 'test_users_endpoint' exécuté en 0.0015 secondes
+2025-06-17 16:57:30,187 - test_api_endpoints - INFO - test_api_endpoints.TestAPIEndpoints.test_users_endpoint completed in 0.0019 seconds
+2025-06-17 16:57:30,191 - TestSuite - INFO - ======================================================================
+2025-06-17 16:57:30,192 - TestSuite - INFO - Test Suite Results:
+2025-06-17 16:57:30,192 - TestSuite - INFO -   Start time: 2025-06-17 16:57:29.973148
+2025-06-17 16:57:30,192 - TestSuite - INFO -   End time: 2025-06-17 16:57:30.191506
+2025-06-17 16:57:30,193 - TestSuite - INFO -   Duration: 0.22 seconds
+2025-06-17 16:57:30,194 - TestSuite - INFO -   Tests run: 27
+2025-06-17 16:57:30,195 - TestSuite - INFO -   Failures: 0
+2025-06-17 16:57:30,195 - TestSuite - INFO -   Errors: 0
+2025-06-17 16:57:30,195 - TestSuite - INFO -   Skipped: 0
+2025-06-17 16:57:30,196 - TestSuite - INFO - ======================================================================
