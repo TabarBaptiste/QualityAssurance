@@ -1,4 +1,6 @@
-# Auteurs
+# Qualité, tests et maintenances pour application wb
+
+## Auteurs
 
 - Harena ANDRIAMANANJARA MANDIMBY
 - Andil ABAYOMI
