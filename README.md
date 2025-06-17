@@ -81,7 +81,7 @@ python test_runner.py --dir some_dir  # Runs tests in a specific directory
 
 ## Testing Concepts Demonstrated
 
-1. **Unit Testing**: The smallest unit of testing, verifies specific responses to particular stimuli
+1. **Unit Testing**: The smallest unit of testing. It checks for a specific response to a particular set of inputs.
 2. **Test Suite**: Collection of multiple test cases or test suites
 3. **Test Runner**: Component that orchestrates the execution of tests and provides results
 
