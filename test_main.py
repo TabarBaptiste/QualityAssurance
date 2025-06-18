@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import Union
 import random
+import pytest
 
 app = FastAPI()
 
@@ -30,18 +31,11 @@ def get_random_french_football_club():
     return random.choice(clubs)
 
 def test_get_random_french_football_club():
-    # assert get_random_french_football_club() == "Bordeaux"
+    assert get_random_french_football_club() == "Bordeaux"
+    
+@pytest.fixture
+def object_list():
+    return []
 
-
-    assert get_random_french_football_club() in [
-        "PSG",
-        "Lyon",
-        "Marseille",
-        "Nice",
-        "Montpellier",
-        "Strasbourg",
-        "Nantes",
-        "Toulouse",
-        "Rennes",
-        "Bordeaux"
-    ]
+def test_object_list(object_list):
+    assert len(object_list) == 0
