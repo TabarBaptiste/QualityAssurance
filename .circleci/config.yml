@@ -2,15 +2,26 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: cimg/base:stable
+      - image: cimg/python:3.9
     steps:
       - checkout
       - run:
-          name: Install pytest
-          command: sudo apt-get update && sudo apt-get install -y python3-pip && pip3 install pytest
+          name: Install dependencies
+          command: |
+            python -m pip install --upgrade pip
+            pip install pytest pytest-cov
+      - run:
+          name: Create test results directory
+          command: mkdir -p test-results
       - run:
           name: Run tests
-          command: pytest
+          command: |
+            python -m pytest --junitxml=test-results/junit.xml --cov=./ --cov-report=xml:test-results/coverage.xml
+      - store_test_results:
+          path: test-results
+      - store_artifacts:
+          path: test-results
+          destination: test-results
   build:
     docker:
       - image: cimg/base:stable
