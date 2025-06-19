@@ -9,18 +9,45 @@ jobs:
           name: Install dependencies
           command: |
             python -m pip install --upgrade pip
-            pip install pytest pytest-cov
+            pip install pytest pytest-cov coverage
+            # Install any other dependencies your tests might need
+            pip freeze > installed_packages.txt
+            echo "Installed packages:"
+            cat installed_packages.txt
       - run:
           name: Create test results directory
           command: mkdir -p test-results
       - run:
           name: Run tests
           command: |
-            python -m pytest --junitxml=test-results/junit.xml --cov=./ --cov-report=xml:test-results/coverage.xml
+            # List all test files to ensure they're found
+            echo "Found test files:"
+            find . -name "test_*.py" -type f
+           
+            # Run tests with verbose output and ensure XML files are created
+            python -m pytest -v --junitxml=./test-results/junit.xml --cov=./ --cov-report=xml:./test-results/coverage.xml
+           
+            # Verify test result files exist
+            echo "Checking if test result files were created:"
+            ls -la ./test-results/
+      # Make sure test results are readable by CircleCI
+      - run:
+          name: Set permissions on test results
+          command: |
+            if [ -d "./test-results" ]; then
+              chmod -R 755 ./test-results
+              echo "Test results directory contents:"
+              find ./test-results -type f | xargs ls -la
+            else
+              echo "Warning: test-results directory not found"
+              mkdir -p ./test-results
+              echo "Created empty test-results directory"
+            fi
+           
       - store_test_results:
-          path: test-results
+          path: ./test-results
       - store_artifacts:
-          path: test-results
+          path: ./test-results
           destination: test-results
   build:
     docker:
