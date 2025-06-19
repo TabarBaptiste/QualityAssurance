@@ -24,31 +24,49 @@ jobs:
             echo "Found test files:"
             find . -name "test_*.py" -type f
            
+            # Create separate directories for test results and coverage
+            mkdir -p ./test-results/junit
+            mkdir -p ./coverage-results
+           
             # Run tests with verbose output and ensure XML files are created
-            python -m pytest -v --junitxml=./test-results/junit.xml --cov=./ --cov-report=xml:./test-results/coverage.xml
+            python -m pytest -v --junitxml=./test-results/junit/junit.xml --cov=./ --cov-report=xml:./coverage-results/coverage.xml
            
             # Verify test result files exist
             echo "Checking if test result files were created:"
-            ls -la ./test-results/
+            ls -la ./test-results/junit/
+            echo "Checking if coverage files were created:"
+            ls -la ./coverage-results/
       # Make sure test results are readable by CircleCI
       - run:
           name: Set permissions on test results
           command: |
-            if [ -d "./test-results" ]; then
+            if [ -d "./test-results/junit" ]; then
               chmod -R 755 ./test-results
               echo "Test results directory contents:"
               find ./test-results -type f | xargs ls -la
             else
               echo "Warning: test-results directory not found"
-              mkdir -p ./test-results
+              mkdir -p ./test-results/junit
               echo "Created empty test-results directory"
             fi
            
+            if [ -d "./coverage-results" ]; then
+              chmod -R 755 ./coverage-results
+              echo "Coverage results directory contents:"
+              find ./coverage-results -type f | xargs ls -la
+            fi
+           
+      # Store test results (only JUnit XML files)
       - store_test_results:
           path: ./test-results
+         
+      # Store both test results and coverage as artifacts
       - store_artifacts:
           path: ./test-results
           destination: test-results
+      - store_artifacts:
+          path: ./coverage-results
+          destination: coverage-results
   build:
     docker:
       - image: cimg/base:stable
